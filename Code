@@ -1,0 +1,29 @@
+int main (){
+bool EBS;
+bool MF_and_VS;
+bool MS_ASMS_ASB_TS;
+bool R2D;
+bool BE;
+if(EBS==true){
+        if(MF_and_VS==true){
+            printf( "AS Finished");
+        }else{
+            printf("AS Emergency");
+        }
+    }else{
+        if(MS_ASMS_ASB_TS==true){
+            
+            if(R2D==true){
+                printf("AS Driving");
+            }else {
+                if(BE==true){
+                   printf("AS Ready");
+                }else{
+                    printf("AS Off");
+                }
+            }
+        }else{
+            printf("AS Off");
+        }
+    }
+}
