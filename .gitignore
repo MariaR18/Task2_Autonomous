@@ -1,32 +1,29 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+int main (){
+bool EBS;
+bool MF_and_VS;
+bool MS_ASMS_ASB_TS;
+bool R2D;
+bool BE;
+if(EBS==true){
+        if(MF_and_VS==true){
+            printf( "AS Finished");
+        }else{
+            printf("AS Emergency");
+        }
+    }else{
+        if(MS_ASMS_ASB_TS==true){
+            
+            if(R2D==true){
+                printf("AS Driving");
+            }else {
+                if(BE==true){
+                   printf("AS Ready");
+                }else{
+                    printf("AS Off");
+                }
+            }
+        }else{
+            printf("AS Off");
+        }
+    }
+}
